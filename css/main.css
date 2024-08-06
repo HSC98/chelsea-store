@@ -4,7 +4,13 @@ ul, li{list-style: none;}
 a{text-decoration: none; color: inherit;}
 
 body{
-    background-color:navy;
+    background-color: white;
+    /* opacity: 0.2; */
+    
+    /* background-size: ; */
+    /* background-repeat: no-repeat; */
+    
+    /* background-position: fixed; */
 }
 
 #wrap{
@@ -12,7 +18,7 @@ body{
     width: 100%;
     max-width: 1920px;
     height: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 #header{
@@ -20,15 +26,16 @@ body{
     left: 0;
     top: 0;
     height: 117px;
-    position: fixed;
+    /* position: fixed; */
     z-index: 200;
     background-color: #ebe6e0;
 }
 
 .head_inner{
     width: 100%;
-    height: 100%;
-    position: relative;
+    height: 120%;
+    /* position: relative; */
+    background-color: navy;
 }
 
 .m_logo{
@@ -36,7 +43,7 @@ body{
 }
 
 .m_logo a{
-    /* display: block; */
+    display: block;
 }
 .m_logo a img{
     /* width: 100%; */
@@ -78,6 +85,10 @@ background-color: black;}
     
 }
 
+.main li ul{
+    /* background-color: #eee; */
+}
+
 .main > li > a{
     display: block;
     height: 50px;
@@ -94,27 +105,19 @@ background-color: black;}
     border-bottom: 1px solid white;
 }
 
-#header:hover .sub{
-    display: block;
-}
-
-#header:hover .sub_bg{
-    display: block;
-}
-
 .sub{
     position: absolute;
-    left: 27px; top: 60px;
+    left: 27px; top: 110px;
     width: 150px;
     display: none;
     z-index: 100;
     text-align: center;
-
+/* background-color: #ebe6e0; */
 }
 
-.sub li{}
+.sub  li{}
 
-.sub li a{
+.sub  li  a{
     display: block;
     height: 30px;
     line-height: 30px;
@@ -122,6 +125,152 @@ background-color: black;}
     color: white;
 }
 
-.sub li a:hover{
-    text-decoration: underline;
+
+.sub_bg{
+    text-align: center;
+    /* margin-top: 20px; */
+    background-color: #02091b;
+
+}
+
+.s_bg{
+    position: absolute;
+    top: calc(140px + 117px + 60px);
+    width: 100%;
+    background-color: rgba(20, 3, 80, 0.5);
+    height: 190px;
+    display: none;
+    z-index: 90;
+}
+
+.img_slide{
+    text-align: center;
+    margin-top: 840px;
+    background-color: white;
+}
+
+.p_img_slide{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin: 40px 0;
+    background-color: white;
+
+}
+
+.m_img{
+    text-align: center;
+}
+
+.c_img{
+    background-color: white;
+    text-align: center;
+}
+
+.c_img h2{
+    background-color: navy;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+}
+
+.products{
+    text-align: center;
+    /* display: flex; */
+}
+
+.p_1 p{
+    /* display: block;
+    text-align: center; */
+
+}
+.products1 div{
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.products1 div p{
+    margin: 10px 0;
+}
+.products2 div p{
+    margin: 10px 0;
+}
+.products3 div p{
+    margin: 10px 0;
+}
+.products2 div{
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.products3 div{
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.products1 a img{
+    border: 1px solid gainsboro;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); 
+    margin: 0 20px;
+    border-radius: 20px;
+    /* height: 400px; */
+    
+}
+.products2 a img{
+    border: 1px solid gainsboro;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); 
+    margin: 0 20px;
+    border-radius: 20px;
+    margin-top:100px;
+}
+
+.p_txt{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin: 40px 0;
+    background-color: navy;
+    height: 100px;
+    line-height: 100px;
+}
+
+.products3 a img{
+    border: 1px solid gainsboro;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); 
+    margin: 0 20px;
+    border-radius: 20px;
+    margin-top:100px;
+}
+
+.footer{
+    margin-top: 140px;
+}
+
+.products div a img{
+    transition: all 0.5s;
+}
+.img_slide a img{
+    transition: all 0.5s;
+}
+.c_img a img{
+    transition: all 0.5s;
+}
+
+.products div a img:hover{
+    transform: scale(90%);
+    
+}
+
+.img_slide a img:hover{
+    transform: scale(90%);
+}
+
+.c_img a img:hover{
+    transform: scale(90%);
 }
