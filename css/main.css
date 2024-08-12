@@ -4,7 +4,7 @@ ul, li{list-style: none;}
 a{text-decoration: none; color: inherit;}
 
 body{
-    background-color: white;
+    /* background-color: white; */
     /* opacity: 0.2; */
     
     /* background-size: ; */
@@ -17,29 +17,22 @@ body{
     margin: 0 auto;
     width: 100%;
     max-width: 1920px;
-    height: 100%;
-    /* border: 1px solid red; */
+
 }
 
 #header{
     width: 100%;
-    left: 0;
-    top: 0;
-    height: 117px;
-    /* position: fixed; */
-    z-index: 200;
-    background-color: #ebe6e0;
 }
 
 .head_inner{
     width: 100%;
-    height: 120%;
     /* position: relative; */
-    background-color: navy;
 }
 
 .m_logo{
     text-align: center;
+    height: 117px;
+    background-color: #ebe6e0;
 }
 
 .m_logo a{
@@ -51,22 +44,25 @@ body{
 
 
 .logo{
-    float: left;
-    width: 307px;
-    margin-top: 24px;
-    margin-left: 50px;
+    background-color: navy;
+    width: 100%;
+    /* height: 612px; */
+    height: 150px;
 }
 .logo a{
     display: block;
+    width: 30%;
+    padding-left: 70px;
 }
 
-.logo img{    
-    width: 100%;
-    
+.logo a img{    
+    width: 80%;
+    margin-top: 20px;
 }
 
 
 .s_logo{width: 100%;
+    height: 60px;
 text-align: center;
 background-color: black;}
 
@@ -82,12 +78,9 @@ background-color: black;}
     float: left;
     position: relative;
     margin: 40px 20px;
-    
+    right: 150px;
 }
 
-.main li ul{
-    /* background-color: #eee; */
-}
 
 .main > li > a{
     display: block;
@@ -130,14 +123,18 @@ background-color: black;}
     text-align: center;
     /* margin-top: 20px; */
     background-color: #02091b;
+    width: 100%;
+    height: 100%;
+
 
 }
 
 .s_bg{
     position: absolute;
-    top: calc(140px + 117px + 60px);
+    top: calc(117px + 60px + 150px + 50px + 80px);
     width: 100%;
-    background-color: rgba(20, 3, 80, 0.5);
+    /* background-color: rgba(20, 3, 80, 0.5); */
+    background-color: rgba(29, 0, 134, 0.5);
     height: 190px;
     display: none;
     z-index: 90;
@@ -145,8 +142,13 @@ background-color: black;}
 
 .img_slide{
     text-align: center;
-    margin-top: 840px;
+    margin-top: 50px;
     background-color: white;
+}
+
+.img_slide a img{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); 
+
 }
 
 .p_img_slide{
